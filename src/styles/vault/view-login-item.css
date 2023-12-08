@@ -1,0 +1,85 @@
+.view-login-item {
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.view-login-item-field {
+  display: flex;
+  align-items: center;
+  background-color: #0a5768;
+  color: white;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  overflow: hidden; /* Add this to ensure content respects the border radius */
+  margin-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.text-content {
+  flex-grow: 1;
+  flex-shrink: 1; /* Allow shrinking */
+  min-width: 0; /* Enable text overflow behavior on flex children */
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  overflow: scroll;
+}
+
+.view-login-item-field label {
+  color: #7f8c8d;
+  width: 80px;
+}
+
+.actions {
+  color: #AFF1FF;
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+  padding-right: 5px;
+  align-items: center;
+}
+
+.icon {
+  /* /* margin-left: 10px; */
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: white;
+}
+
+.view-login-item-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  margin-bottom: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.view-login-item-button.clone {
+  background-color: #16a085;
+}
+
+.view-login-item-button.delete {
+  background-color: #c0392b;
+}
+
+.view-login-item-dates {
+  margin-top: 10px;
+  /* font-size: 12px; */
+  margin-left: 15px;
+  /* color: #95a5a6; */
+}
+
+.view-login-item-dates span {
+  font-weight: bold;
+}

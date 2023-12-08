@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=DM+Sans&family=Inter:wght@100;200;300;400;500;600;700&family=Quicksand:wght@700&display=swap');
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: #042d36;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  height: 500px;
+  width: 400px;
+}
+
+.content {
+  background-color: #042d36;
+  position: fixed; /* Fixed position relative to the viewport */
+  left: 0; /* Align to the left edge of the viewport */
+  right: 0; /* Align to the right edge of the viewport */
+  top: 0; /* Align to the bottom edge of the viewport */
+  height: 100%;
+  z-index: 1000; /* Ensure it stays on top of other content */
+  overflow-y: auto; /* Enable vertical scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+  padding: 6px;
+  padding-top: 45px;
+}
+
+.nav {
+  position: fixed; /* Fixed position relative to the viewport */
+  left: 0; /* Align to the left edge of the viewport */
+  right: 0; /* Align to the right edge of the viewport */
+  bottom: 0; /* Align to the bottom edge of the viewport */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it stays on top of other content */
+  background-color: #0a5768;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align items vertically in the center */
+}
+
+.nav-button {
+  flex: 1;
+  text-align: center; /* Center the text inside the button */
+  background-color: #0a5768;
+  color: #AFF1FF;
+  border: 0;
+}
+
+.nav-button-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+  gap: 2px; /* Adjust the gap between items as needed */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-button-content:hover {
+  background-color: #457079;
+  cursor: pointer;
+}
+
+.nav-button-content p {
+  margin: 0; /* Remove default margin from paragraph */
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.nav-button-active {
+  color: white; /* Replace with your color */
+  font-weight: 400; /* Optional: bold for active button */
+}
+
+.nav-button-active p {
+  font-weight: 500;
+}

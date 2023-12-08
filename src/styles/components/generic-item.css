@@ -1,0 +1,67 @@
+.generic-item {
+  display: flex;
+  align-items: center;
+  background-color: #0a5768;
+  color: white;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  overflow: hidden; /* Add this to ensure content respects the border radius */
+  margin-bottom: 6px;
+}
+
+.generic-item .text-content {
+  flex-grow: 1;
+  flex-shrink: 1; /* Allow shrinking */
+  min-width: 0; /* Enable text overflow behavior on flex children */
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  overflow: hidden; /* Ensure it doesn't push other elements out */
+  margin-bottom: 3px;
+}
+
+.generic-item .title, .generic-item .subtitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.generic-item .subtitle {
+  font-size: 14px;
+  color: #D8D8D8;
+}
+
+.generic-item .title-no-subtitle {
+  font-size: 16px;
+}
+
+.generic-item .title-no-prefix {
+  margin-left: 5px;
+}
+
+.generic-item .prefix {
+  color: #AFF1FF;
+}
+
+.generic-item .actions {
+  color: #AFF1FF;
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+  padding-right: 5px;
+  align-items: center;
+}
+
+.generic-item .actions .action-icon:hover {
+  color: white;
+}
+
+.generic-item .prefix-no-subtitle, .generic-item .actions-no-subtitle {
+  gap: 15px;
+}
+
+.generic-item:hover {
+  background-color: #457079;
+  cursor: pointer;
+}

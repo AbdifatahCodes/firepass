@@ -1,0 +1,111 @@
+.header {
+  position: relative; /* Needed to position the search icon absolutely */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  background-color: #0a5768; /* The color of your header background */
+  justify-content: space-between;
+  height: 45px;
+  position: fixed; /* Fixed position relative to the viewport */
+  left: 0; /* Align to the left edge of the viewport */
+  right: 0; /* Align to the right edge of the viewport */
+  top: 0; /* Align to the bottom edge of the viewport */
+  z-index: 10000; /* Ensure it stays on top of other content */
+  border-top: 1px solid #042d36;
+  border-bottom: 1px solid #042d36;
+}
+
+.search-container {
+  position: relative; /* Relative position for absolute children */
+  flex-grow: 1; /* Allow it to grow and fill available space */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  padding: 2px;
+  height: 100%;
+  margin-left: 5px;
+}
+
+.search-container-with-prefix {
+  margin-left: 0;
+}
+
+.title-container {
+  position: relative; /* Relative position for absolute children */
+  flex-grow: 1; /* Allow it to grow and fill available space */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  padding: 2px;
+  height: 100%;
+  margin-left: 5px;
+  justify-content: center;
+}
+
+.title-text {
+  font-weight: semi-bold;
+  font-size: 18px;
+}
+
+.prefix-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  height: 100%;
+  font-size: 15px;
+  padding-left: 5px;
+  padding-right: 3px;
+}
+
+.suffix-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  height: 100%;
+  font-size: 15px;
+  padding-left: 5px;
+  padding-right: 3px;
+}
+
+.no-icon-in-button {
+  padding-left: 11px;
+  padding-right: 8px;
+}
+
+.search-icon-container {
+  position: absolute;
+  left: 10px; /* Adjust as necessary for padding */
+  display: flex;
+  align-items: center;
+  pointer-events: none; /* Makes the icon non-interactive */
+}
+
+.search-icon {
+  color: #AFF1FF; /* Style as needed */
+}
+
+.header-search {
+  flex-grow: 1;
+  border: none; /* No border */
+  background-color: #106F84; /* Slightly darker background for the input */
+  color: #AFF1FF; /* Text color */
+  padding: 5px 10px; /* Padding inside the input */
+  border-radius: 8px; /* Rounded corners for the input */
+  outline: none; 
+  padding-left: 33px;
+  font-size: 18px;
+}
+
+.header-search::placeholder {
+  color: #93e9fc; /* Lighter text color for the placeholder */
+}
+
+.prefix-button:hover,
+.suffix-button:hover {
+  background-color: #457079;
+}

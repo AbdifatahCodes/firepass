@@ -1,0 +1,10 @@
+.sections-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #42B7D0;
+  margin: 4px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
